@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Box Shadow</title>
+</head>
+<body id="body">
+    <!-- HEADER -->
+    <div id="header" class="header">
+            <div class="title">BOX Shadows</div>
+    </div>
+    <!-- FOOTER -->
+        <div class="footer"></div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebarLeft">
+
+        <div class="sidebarTitle">Кастомизация блока и фона</div>
+            <div class="blockCustom">
+            <div class="contentCustom">
+                <div class="text">Высота:</div>
+                <div id="sliderheight" class="slider">
+                    <div id="circleheight" class="circle"></div>
+                </div>
+            </div>
+            <div class="contentCustom">
+                <div class="text">Ширина:</div>
+                <div id="sliderwidth" class="slider">
+                    <div id="circlewidth" class="circle"></div>
+                </div>
+            </div>
+            <div class="contentCustom">
+                <div class="text">Скругление:</div>
+                <div id="sliderRounding" class="slider">
+                    <div id="circleRounding" class="circle"></div>
+                </div>
+            </div>
+            <div class="blockColor">
+                <div class="text">Цвет фона:</div>
+                <input type="color" id="colorBackground" value="#FF9142">
+            </div>
+            <div class="blockColor">
+                <div class="text">Цвет блока:</div>
+                <input type="color" id="colorBlock" value="#FF9142">
+            </div>
+            <div class="blockButton">
+                <button onclick="resetActions()" class="sidbarButton">
+                    <div class="text textButton" id="return">СБРОС</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="sidebarRight">
+        <div class="sidebarTitle">Кастомизация тени</div>
+        <div class="contentCustom">
+            <div class="text">Горизонтальное смещение:</div>
+            <div class="input-wrapper">
+                <input type="text" id="horizontalInput" placeholder="5">
+            </div>
+        </div>
+        <div class="contentCustom">
+            <div class="text">Вертикальное смещение:</div>
+            <div class="input-wrapper">
+                <input type="text" id="verticalInput" placeholder="5">
+            </div>
+        </div>
+        <div class="contentCustom">
+            <div class="text">Размытие:</div>
+            <div class="input-wrapper">
+                <input type="text" id="shadowInput" placeholder="10">
+            </div>
+        </div>
+        <div class="blockColor">
+            <div class="text">Цвет тени:</div>
+            <input type="color" id="colorShadow" value="#FF9142">
+        </div>
+        <div class="text">Код:</div>
+        <div class="codeBlockContainer">
+            <div class="codeBlock" id="codeBlock"></div>
+            <button id="copyButton">Копировать</button>
+        </div>
+    </div>
+
+    
+    <!-- PAGE -->
+    <div class="page">
+        <div class="block" id="block"></div>
+    </div>
+       
+   
+</body>
+</html>
